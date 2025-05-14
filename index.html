@@ -3,24 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cadence Software Solutions Pvt. Ltd. - Your trusted partner in digital transformation, offering software development, AI solutions, and more." />
   <title>Cadence Software Solutions Pvt. Ltd.</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <!-- Header / Navigation -->
-  <header id="header">
-    <nav class="navbar">
-      <div class="logo" ><a href="index.html">Cadence Software Solutions</a></div>
-      <ul class="nav-links">
-        <!-- <li><a href="#home">Home</a></li> -->
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="getintouch.html">Get in Touch</a></li>
-      </ul>
-    </nav>
-  </header>
+   
+ <div id="header-placeholder"></div>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
@@ -91,29 +81,30 @@
     <p>Phone: +91-XXXXXXXXXX</p>
   </section>
 
-  <!-- Get in Touch Section (can also be removed if you use getintouch.html only) -->
+  <!-- Get in Touch Section -->
   <section id="getintouch" class="section">
     <h2>Get in Touch</h2>
     <form id="contact-form" action="https://formspree.io/f/xwpowdqd" method="POST">
-  <input type="text" name="name" placeholder="Full Name" required />
-  <input type="email" name="email" placeholder="Email Address" required />
-  <input type="text" name="subject" placeholder="Subject" />
-  <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-  <button type="submit">Submit</button>
-</form>
-
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Full Name" required />
+      
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Email Address" required />
+      
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject" />
+      
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2025 Cadence Software Solutions Pvt. Ltd. | All rights reserved.</p>
-    <div class="social-icons">
-      <a href="#">LinkedIn</a> |
-      <a href="#">Twitter</a> |
-      <a href="#">Facebook</a>
-    </div>
-  </footer>
+  <div id="footer-placeholder"></div>
 
   <script src="js/main.js"></script>
+  <script src="js/include.js"></script>
 </body>
 </html>
