@@ -75,42 +75,39 @@ a {
   transform: scale(1.1);
 }
 
-/* Responsive Menu */
+/* Hamburger Menu Icon */
 .menu-icon {
   display: none;
   cursor: pointer;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.nav-links li a {
+  font-size: 28px;
   color: #fff;
-  font-weight: 500;
-  transition: color 0.3s ease, transform 0.3s ease;
 }
 
+/* Responsive Navbar */
 @media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
   .menu-icon {
     display: block;
-    color: #fff;
-    font-size: 28px;
+    position: absolute;
+    top: 22px;
+    right: 30px;
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
-    gap: 10px;
-    background: #1e2a38;
-    padding: 10px;
-    position: absolute;
-    top: 60px;
-    left: 0;
+    gap: 15px;
     width: 100%;
-    border-top: 2px solid #fff;
+    background: #1e2a38;
+    padding: 15px 30px;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    border-top: 1px solid #fff;
   }
 
   .nav-links.active {
@@ -158,7 +155,7 @@ a {
 .hero-content h1 {
   font-size: 3.5rem;
   animation: fadeIn 1.2s ease-in-out;
-  color: #050125;
+  color: #ffffff;
 }
 
 .hero-content p {
@@ -267,9 +264,6 @@ a {
   font-size: 1.6rem;
   color: #1e2a38;
   animation: pulse 2s infinite;
-  white-space: wrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .counter {
@@ -350,41 +344,4 @@ footer .social-icons a:hover {
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.02); }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .testimonial-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    background: #1e2a38;
-    padding: 10px;
-    display: none; /* for a future toggle menu */
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .service-list li {
-    width: 90%;
-  }
-
-  .project-card {
-    width: 90%;
-  }
-
-  .testimonial {
-    width: 90%;
-  }
 }
